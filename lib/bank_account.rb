@@ -13,11 +13,11 @@ attr_accessor :status, :balance
   end
 
   def display_balance
-    self.balance
+    @balance
   end
 
   def valid?
-    true if @status == "open" && self.balance > 0
+    true if @status == "open" && @balance > 0
   end
 
   def close_account
