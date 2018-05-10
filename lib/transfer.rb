@@ -9,7 +9,11 @@ attr_accessor :sender, :receiver, :amount, :status
   end
 
   def valid?
-
+    if sender.valid?
+      true
+    else
+      false
+    end
   end
 
   def execute_transaction
